@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ห่านขาวตัวใหญ่น่ารัก</title>
-    <link rel="stylesheet" href="styles.css"> <!-- เชื่อมโยง CSS ที่คุณใช้ -->
+    <link rel="stylesheet" href="styles.css"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="icon" href="https://media.istockphoto.com/id/1297111820/th/%E0%B9%80%E0%B8%A7%E0%B8%84%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3%E0%B9%8C/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%95%E0%B8%B9%E0%B8%99%E0%B
 </head>
       <style>
 
@@ -22,44 +20,45 @@
         .product-items:hover { transform: scale(1.03); }
 
         .back-button {
-    background-color: #007bff; /* สีพื้นหลัง */
-    color: white; /* สีตัวอักษร */
+    background-color: #007bff; 
+    color: white; 
     border: none;
     padding: 10px 20px;
-    border-radius: 5px; /* ขอบโค้งมน */
+    border-radius: 5px; 
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
 }
 
 .back-button:hover {
-    background-color: #0056b3; /* สีพื้นหลังเมื่อชี้เมาส์ */
-    transform: scale(1.05); /* ขยายเล็กน้อยเมื่อชี้เมาส์ */
+    background-color: #0056b3; 
+    transform: scale(1.05); 
 }
 
 .back-button:active {
-    background-color: #003f7f; /* สีพื้นหลังเมื่อคลิก */
+    background-color: #003f7f;
 }
-
+        
     </style>
 <body>
 
     <header style="background-color: white;">
         <div id="navbar-placeholder"></div>
     </header>
-
 <main>
     <section id="products">
-      
         <div class="product-details">
             <div class="product">
-                <img class="img" src="https://down-th.img.susercontent.com/file/ffb704c20347e249c0b79e7e9286e120.webp" alt="ห่านขาวตัวใหญ่น่ารัก" style="height: 280px;">
-                <h5>ห่านขาวตัวใหญ่น่ารัก</h5>
-                <p>ประเภทของเล่น: ตุ๊กตา<br>ไส้: ผ้าฝ้าย PP</p>
-                <p>ราคา : 128 บาท</p>
-                <a href="#" class="btn btn-primary" onclick="showOrderToast()">สั่งซื้อ</a>
+                <img class="img" src="https://mercular.s3.ap-southeast-1.amazonaws.com/images/products/2021/08/Product/tengu-masamune-gaming-chair-white-01.jpg" alt="สินค้า 1" style="height: 280px;">
+                    <h5>เก้าอี้เล่นเกม Tengu Masamune Gaming Chair White 1</h5>
+                        <p>รายละเอียด: มีเบาะรองขาพับเก็บได้ ใช้งานสะดวก <br>
+                                        ที่พักแขน 3D ปรับได้อย่างอิสระ <br> 
+                                        ปรับเอนได้ตั้งแต่ 90-180 องศา <br>
+                                        รองรับน้ำหนักได้ถึง 150 กก. </p>
+                <p>ราคา : 3,590 บาท</p>
+                <button class="btn btn-primary" onclick="showOrderToast()">สั่งซื้อ</button>
             </div>
-        <button onclick="goBack()" class="back-button">ย้อนกลับ</button>
+            <button onclick="goBack()" class="back-button">ย้อนกลับ</button>
         </div>
     
          <!-- Toast Notification -->
@@ -67,7 +66,7 @@
             <div id="orderToast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="d-flex">
                     <div class="toast-body">
-                        สั่งซื้อสำเร็จจ้า!
+                        สั่งซื้อสำเร็จ!
                     </div>
                     <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
                 </div>
@@ -80,9 +79,9 @@
    <div id="footer-placeholder"></div> <!-- Footer placeholder --> 
     <!-- Navbar & Footer Scripts -->
     <script>
-        function goBack() {
-            history.back();
-        }
+            function goBack() {
+                history.back();
+            }
         fetch('navbar.html')
             .then(response => response.text())
             .then(data => {
